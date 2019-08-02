@@ -30,8 +30,8 @@ public class Transposition {
     public static void transponMatrix(double [][] matrix){
         double temp;
 
-        for (int i=1;i<matrix.length;i++){
-            for (int j=i+1;i<matrix.length;i++){
+        for (int i=0;i<matrix.length;i++){
+            for (int j=i+1;i<matrix.length;j++){
                 temp=matrix[j][i];
                 matrix[j][i]=matrix[i][j];
                 matrix[i][j]=temp;
