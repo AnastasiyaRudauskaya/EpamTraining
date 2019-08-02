@@ -9,7 +9,7 @@ public class MeansOfMatrixElements {
         for (int j = 0;j<matrix[0].length;j++){
             product *= matrix[i][j];
         }
-        return Math.pow(product, 1 / (matrix.length*matrix[0].length));
+        return Math.pow(product, (double) 1 / (matrix.length*matrix[0].length));
     }
 
     public static double toFindArithmeticMean(double[][] matrix) {
