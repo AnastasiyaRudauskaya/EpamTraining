@@ -30,6 +30,8 @@ public class ExtremumsOfMatrix {
             for (int j = 1; j < matrix[0].length - 1; j++) {
                 if (matrix[i][j] > matrix[i + 1][j] && matrix[i][j] > matrix[i - 1][j] &&
                         matrix[i][j] > matrix[i][j + 1] && matrix[i][j] > matrix[i][j - 1]) {
+                    index[0]=j;
+                    index[1]=i;
                     return index;
                 }
             }
@@ -43,6 +45,8 @@ public class ExtremumsOfMatrix {
             for (int j = 1; j < matrix[0].length - 1; j++) {
                 if (matrix[i][j] < matrix[i + 1][j] && matrix[i][j] < matrix[i - 1][j] &&
                         matrix[i][j] < matrix[i][j + 1] && matrix[i][j] < matrix[i][j - 1]) {
+                    index[0]=j;
+                    index[1]=i;
                     return index;
                 }
             }
