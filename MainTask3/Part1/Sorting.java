@@ -108,16 +108,17 @@ public class Sorting {
                 }
             }
             if (i < arr1.length && j < arr2.length) {
-                if (arr1[i] > arr2[j]) {
+                if (arr1[i] < arr2[j]) {
                     resultArray[k++] = arr1[i++];
+                } else {
+                    resultArray[k++] = arr2[j++];
                 }
-            } else {
-                resultArray[k++] = arr2[j++];
             }
         }
 
         return resultArray;
     }
+
 
     public static void quickSort(double[] arr, int low, int high) {
         if (arr.length == 0)
