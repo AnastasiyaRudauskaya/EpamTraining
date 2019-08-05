@@ -13,13 +13,14 @@ public class Transposition {
         }
         return true;
     }
-
-    public static boolean isSecondaryDiagSymmetric(double [][] matrix){
+public static boolean isSecondaryDiagSymmetric(double [][] matrix){
         if (matrix.length!=matrix[0].length) return false;
+
+        int length=matrix.length;
 
         for (int i=matrix.length-1;i>0;i--){
             for (int j=i+1;j<matrix.length;j++){
-                if (matrix[i][j]!=matrix[j][i]){
+                if (matrix[i][j]!=matrix[length-1-j][length-1-i]){
                     return false;
                 }
             }
