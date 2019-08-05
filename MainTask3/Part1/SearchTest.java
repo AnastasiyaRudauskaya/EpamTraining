@@ -14,7 +14,6 @@ public class SearchTest {
         Assert.assertEquals(Search.linearSearch(actual1,3.0),3);
         Assert.assertEquals(Search.linearSearch(actual1,12.0),-1);
         Assert.assertEquals(Search.linearSearch(actual2,11.0),4);
-
     }
 
     @Test
